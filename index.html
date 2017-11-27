@@ -10,11 +10,11 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 10px; overflow: auto;'>
-     <a-scene embedded arjs>
+     <a-scene embedded arjs='sourceType: webcam;'>
                 <!--<a-text value="Hello, World!"></a-text>-->
                 <a-text value="Hello, World!"></a-text>
                 <a-marker-camera preset='custom' url='/pattern_marker.patt'></a-marker-camera>
-                
+                <a-entity camera></a-entity>
              </a-scene>         
     
 </body>
