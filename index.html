@@ -10,14 +10,12 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 10px; overflow: auto;'>
-        
-        <a-scene embedded arjs>
-                
-                <a-sphere position='0 0.5 0' material='opacity: 0.5;'></a-sphere> 
-                
+     <a-scene embedded arjs>
                 <!--<a-text value="Hello, World!"></a-text>-->
-                <a-marker-camera preset='hiro'></a-marker-camera>
-              </a-scene>
+                <a-text value="Hello, World!"></a-text>
+                <a-marker-camera type='pattern' patternUrl='https://github.com/FlixAcosta/FlixAcosta.github.io/blob/master/pattern_marker.patt'></a-marker-camera>
+                
+             </a-scene>         
     
 </body>
 </html>
