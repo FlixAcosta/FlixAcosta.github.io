@@ -12,24 +12,12 @@
 </head>
 <body style='margin : 10px; overflow: auto;'>
      <a-scene embedded arjs>
-                <!--<a-text value="Hello, World!"></a-text>-->
-
-                <a-assets>
-                    <a-asset-item id="mario" src="assets/scene.gltf"></a-asset-item>
-                  </a-assets>
-               
-                    
-                
-                  <!-- use your gltf model -->
-                  <a-entity gltf-model="mario"></a-entity>
-         <a-marker-camera preset='custom' type='pattern' url='ar.patt'> </a-marker-camera>
-                
-         <!--
-         <a-torus-knot radius='0.26' radius-tubular='0.05'>
-             
-				<a-animation attribute="rotation" to="360 0 0" dur="3000" easing='linear' repeat="indefinite"></a-animation>
-			</a-torus-knot>
-                -->
+         
+         <a-marker preset='hiro'>
+            <a-video src="infinity.mp4" width="4" height="2" position="0 0.5 0"
+                             autoplay loop="true" rotation="-90 0 0"></a-video>
+         </a-marker>
+            
              </a-scene>         
     
 </body>
